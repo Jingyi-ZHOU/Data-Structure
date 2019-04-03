@@ -1,5 +1,4 @@
-package SPLT_A4;
-// ref: http://users.cis.fiu.edu/~weiss/dsaajava/code/DataStructures/SplayTree.java
+package SPLT;
 
 public class SPLT implements SPLT_Interface {
 	private BST_Node root;
@@ -13,7 +12,7 @@ public class SPLT implements SPLT_Interface {
 		nullNode.left = nullNode.right = nullNode;
 	}
 
-	public BST_Node getRoot() { // please keep this in here! I need your root node to test your tree!
+	public BST_Node getRoot() { // for test
 		return root;
 	}
 
@@ -112,22 +111,6 @@ public class SPLT implements SPLT_Interface {
 	 * and to root 2. contain: contain -> splay to root; not contain -> the previous
 	 * one to root 3. findMin(Max) 4. remove: contain -> findMax on L -> make R the
 	 * right child of L
-	 */
-	/*
-	 * 在自顶向下(top-down)的实现中，需要将输入的树拆成三颗树，分别为左树L，中树M和右树R。其中M树维护当前还未被访问到的节点，
-	 * L树中所有节点的值都小于M树中的任何节点值，R树中所有节点的值都大于M树中的任何节点值。L树中只需要知道当前的最大节点
-	 * (leftTreeMax)，而R树中只需要知道当前的最小节点(rightTreeMin)。左右两棵树的根节点分别可以通过nullNode节点（
-	 * 它是leftTreeMax和rightTreeMin的初始值，而且splay过程中变量nullNode本身未变化,只改变它的左右孩子节点）
-	 * 的右和左孩子节点得到，因为leftTreeMax中加入一个新的节点或子树时都是将新的节点作为leftTreeMax的右孩子，而不是左孩子（注意这里的顺序）
-	 * ，rightTreeMin跟leftTreeMax相反。自顶向下的zig-zig或zag-zag需要做旋转操作，zig-
-	 * zig的旋转操作叫rotationWithLeftChild,旋转后目标节点的父节点和祖父节点加入R树，zag-
-	 * zag的旋转操作叫rotationWithRightChild,旋转后目标节点的父节点和祖父节点加入L树。另外zig-zag或zag-
-	 * zig可以分别简化为zig或zag操作，这样可以将zig-zag和zig合二为一，从而只需考虑一种情况，而不需要将两种情况单独考虑。
-	 * zig操作将目标节点的父节点加入R树，zag操作将目标节点的父节点加入L树。
-	 * 注意L和R树中每次加入新节点都需更新变量leftTreeMax或rightTreeMin。自顶向下splay操作的最后一步是重组(re-assemble)
-	 * ：将M树的左孩子设置为L树的根节点，将M树的右孩子设置为R树的根节点，然后M树原来的左孩子成为leftTreeMax的右孩子，
-	 * M树原来的右孩子成为rightTreeMin的左孩子。
-	 * 
 	 */
 	private BST_Node splay(String s, BST_Node r) {
 		if (r == null)
