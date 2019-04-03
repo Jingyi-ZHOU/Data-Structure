@@ -1,4 +1,4 @@
-package MinBinHeap_A3;
+package MinBinHeap;
 
 public class EntryPair implements EntryPair_Interface {
   public String value;
