@@ -1,15 +1,4 @@
-/**
- * COMP 410
- *
- * Make your class and its methods public!
- * Don't modify this file!
- *
- * Your LinkedList implementation will implement this interface.
- *
-*/
-
-
-package LinkedList_A1;
+package LinkedList;
 /*
   Interface: The LIST will provide this collection of operations:
 
