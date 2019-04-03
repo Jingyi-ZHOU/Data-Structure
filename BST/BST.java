@@ -76,7 +76,6 @@ public class BST implements BST_Interface {
 		return root;
 	}
 
-
 	@Override
 	public String findMin() {
 		if (root == null)
