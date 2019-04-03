@@ -1,13 +1,8 @@
-package LinkedList_A1;
+package LinkedList;
 
 public class LinkedListPlayground {
 
   public static void main(String[] args) { 
-    /*
-     here you can instantiate your LinkedList and play around with it to check
-     correctness. We've graciously also provided you a bit of extra test data for debugging.
-     It doesn't matter what you have in here. We will not grade it. This is for your use in testing your implementation.
-      */
     test1();
     test2();
 
