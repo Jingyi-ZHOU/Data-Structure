@@ -1,4 +1,4 @@
-package BST_A2;
+package BST;
 
 public class BST implements BST_Interface {
 	public BST_Node root;
@@ -10,7 +10,7 @@ public class BST implements BST_Interface {
 	}
 
 	@Override
-	// used for testing, please leave as is
+	// used for testing
 	public BST_Node getRoot() {
 		return root;
 	}
@@ -75,29 +75,7 @@ public class BST implements BST_Interface {
 		}
 		return root;
 	}
-	
-//	private boolean remove(BST_Node root, String s) {
-//		if (s.compareTo(root.data) == 0) {
-//			if (root.left == null && root.right == null) {
-//				root = null;
-//				return true;
-//			} else if (root.right == null) {
-//				root.data = findMax(root.left).data;
-//				return remove(root.left, root.data);
-//			} else {
-//				root.data = findMin(root.right).data;
-//				return remove(root.right, root.data);
-//			}
-//		} else if (s.compareTo(root.data) > 0) {
-//			if (root.right == null)
-//				return false;
-//			return remove(root.right, s);
-//		} else {
-//			if (root.left == null)
-//				return false;
-//			return remove(root.left, s);
-//		}
-//	}
+
 
 	@Override
 	public String findMin() {
