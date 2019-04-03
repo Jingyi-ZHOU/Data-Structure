@@ -1,4 +1,4 @@
-package SPLT_A4;
+package SPLT;
 
 public class SPLT_Playground {
   public static void main(String[] args){
