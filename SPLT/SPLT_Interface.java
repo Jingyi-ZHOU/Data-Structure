@@ -1,13 +1,4 @@
-/**
- * COMP 410
- *
- * Make your class and its methods public!
- *
- * Your SPLT implementation will implement this BST interface.
- *
-*/
-
-package SPLT_A4;
+package SPLT;
 
 /*
   Interface: The SPLT will provide this collection of operations:
