@@ -1,4 +1,4 @@
-package SPLT_A4;
+package SPLT;
 
 public class BST_Node {
 	String data;
